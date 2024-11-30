@@ -142,13 +142,11 @@ header .box {
 
 .intro .owl-dots {
     position: absolute;
-    left: 0;
-    right: 0;
     bottom: 70px;
     z-index: 4;
-    display: block;
-    width: 4.8%;
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .intro .owl-dots button.owl-dot {
@@ -551,7 +549,6 @@ header .box {
 .latest-news {
     background-color: var(--promenade);
     padding-top: 22px;
-    padding-bottom: 80px;
     box-sizing: border-box;
 }
 
@@ -587,65 +584,51 @@ header .box {
     background-repeat: no-repeat;
     position: relative;
     border: none;
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
-.card .item img {
+.card .item a {
     position: relative;
-    top: 40%;
-    left: 50%;
+    top: 35%;
+    transform: translate(0, -35%);
+    display: block;
     visibility: hidden;
 }
 
 .card .item .overtext {
     position: absolute;
     z-index: 1;
-    bottom: 30px;
+    bottom: 0;
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
-    background-color: var(--darkblue);
     font-size: 16px;
     font-weight: 700;
     line-height: 18.75px;
     letter-spacing: 2px;
-    color: var(--promenade);
-    visibility: hidden;
-}
-
-.card .undertext {
-    width: 100%;
-    height: 40px;
     background-color: var(--white);
-    margin-bottom: 30px;
-    padding: 10px;
-    box-sizing: border-box;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 18.75px;
-    letter-spacing: 2px;
     color: var(--darkgray);
     border: none;
     border-radius: 0 0 10px 10px;
 }
 
 .card:hover .item {
-    border: 8px solid var(--darkblue);
-    box-sizing: border-box;
-    border-radius: 10px;
-    margin-bottom: 30px;
+    box-shadow: inset 0 0 0 10px var(--darkblue);
 }
 
 .card:hover .item .overtext {
-    visibility: visible;
+    background-color: var(--darkblue);
+    color: var(--promenade);
+    bottom: 30px;
+    border-radius: 0;
 }
 
 .card:hover .item img {
     visibility: visible;
-}
-
-.card:hover .undertext {
-    display: none;
 }
 
 .contents-two {
@@ -699,9 +682,9 @@ header .box {
 }
 
 .testimonial .box .owl-dots {
-    display: block;
-    width: 4.8%;
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .testimonial .box .owl-dots button.owl-dot {
@@ -751,11 +734,8 @@ footer .info .text {
     width: 25%;
     text-align: center;
     border: 1px solid #7EBF84;
-    padding: 15px;
-}
-
-.link.start {
     border-left: none;
+    padding: 15px;
 }
 
 .link.end {
@@ -842,10 +822,6 @@ footer .logo {
     .contents .main .text {
         font-size: 18px;
         line-height: 20px;
-    }
-
-    .intro .owl-dots {
-        width: 6%;
     }
 
     .intro .owl-dots button.owl-dot {
@@ -980,10 +956,6 @@ footer .logo {
         line-height: 28px;
     }
 
-    .testimonial .box .owl-dots {
-        width: 6.8%;
-    }
-
     /* footer */
 
     footer .info .text {
@@ -1045,10 +1017,6 @@ footer .logo {
     .contents .main .text {
         font-size: 18px;
         line-height: 20px;
-    }
-
-    .intro .owl-dots {
-        width: 8%;
     }
 
     .intro .owl-nav {
@@ -1209,10 +1177,6 @@ footer .logo {
         margin-bottom: 40px;
     }
 
-    .testimonial .box .owl-dots {
-        width: 8.8%;
-    }
-
     /* footer */
 
     footer .info {
@@ -1268,7 +1232,6 @@ footer .logo {
     }
 
     .intro .owl-dots {
-        width: 10%;
         bottom: 50px;
     }
 
@@ -1406,10 +1369,6 @@ footer .logo {
         width: 60%;
     }
 
-    .testimonial .box .owl-dots {
-        width: 10.8%;
-    }
-
     /* footer */
 
     footer .info {
@@ -1451,7 +1410,6 @@ footer .logo {
 
     .intro .owl-dots {
         bottom: 20px;
-        width: 19%;
     }
 
     .intro .owl-nav {
@@ -1638,10 +1596,6 @@ footer .logo {
         line-height: 23.44px;
         margin-top: 90px;
         margin-bottom: 50px;
-    }
-
-    .testimonial .box .owl-dots {
-        width: 21.8%;
     }
 
     /* footer */
