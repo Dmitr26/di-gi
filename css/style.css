@@ -8,6 +8,11 @@
     --darkgray: #4A4A4A;
     --justgray: #797979;
     --lightgray: #9B9B9B;
+    --white: #ffffff;
+}
+
+body {
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 .wrapper {
@@ -95,25 +100,23 @@ header .box {
 }
 
 .contents .main .title {
-    font-family: "Roboto Condensed", sans-serif;
     font-size: 96px;
     font-weight: 400;
     text-transform: uppercase;
     line-height: 96px;
     letter-spacing: 2px;
     text-align: center;
-    color: #ffffff;
+    color: var(--white);
     margin-bottom: 30px;
     margin-top: 0;
 }
 
 .contents .main .text {
-    font-family: "Roboto Condensed", sans-serif;
     font-size: 24px;
     font-weight: 400;
     line-height: 26px;
     text-align: center;
-    color: #ffffff;
+    color: var(--white);
     margin-bottom: 30px;
 }
 
@@ -130,7 +133,7 @@ header .box {
     border: none;
     border-radius: 3px;
     font-family: "Roboto", sans-serif;
-    color: #ffffff;
+    color: var(--white);
     font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -151,18 +154,15 @@ header .box {
 .intro .owl-dots button.owl-dot {
     width: 10px;
     height: 10px;
+    border: none;
     border-radius: 50px;
-    background-color: #ffffff;
+    border: 1px solid var(--white);
+    background-color: var(--white);
     margin: 5px;
 }
 
 .intro .owl-dots button.owl-dot.active {
-    width: 10px;
-    height: 10px;
-    border-radius: 50px;
-    border: 1px solid #ffffff;
     background-color: transparent;
-    margin: 5px;
 }
 
 .intro .owl-nav {
@@ -221,7 +221,7 @@ header .box {
     font-size: 24px;
     font-weight: 500;
     line-height: 32px;
-    color: #ffffff;
+    color: var(--white);
 }
 
 .promo .box .text p {
@@ -229,7 +229,7 @@ header .box {
     font-size: 16px;
     font-weight: 300;
     line-height: 18px;
-    color: #ffffff;
+    color: var(--white);
 }
 
 .buy button {
@@ -261,7 +261,6 @@ header .box {
 }
 
 .services .left h1 {
-    font-family: "Roboto Condensed", sans-serif;
     color: var(--darkblue);
     font-size: 48px;
     font-weight: 400;
@@ -312,8 +311,41 @@ header .box {
     justify-content: center;
     align-items: center;
     height: 270px;
-    border: 1px solid rgba(255, 215, 0, 0.3);
-    padding: 10px;
+    padding: 5px;
+}
+
+.service.one,
+.service.five {
+    border-left: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.service.one,
+.service.two,
+.service.three,
+.service.four,
+.service.five,
+.service.six,
+.service.seven,
+.service.eight {
+    border-right: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.service.one,
+.service.two,
+.service.three,
+.service.four {
+    border-top: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.service.one,
+.service.two,
+.service.three,
+.service.four,
+.service.five,
+.service.six,
+.service.seven,
+.service.eight {
+    border-bottom: 1px solid rgba(255, 215, 0, 0.3);
 }
 
 .service .border {
@@ -321,8 +353,9 @@ header .box {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid #ffffff;
+    border: 1px solid var(--white);
     height: 99%;
+    width: 99%;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -332,7 +365,6 @@ header .box {
 }
 
 .service .border h2 {
-    font-family: "Roboto Condensed", sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 18.75px;
@@ -353,7 +385,6 @@ header .box {
 }
 
 .service .border a {
-    font-family: "Roboto Condensed", sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 18.75px;
@@ -372,24 +403,23 @@ header .box {
 
 .recent-block {
     height: 618px;
-    background-image: linear-gradient(var(--darkblue), #ffffff);
+    background-image: linear-gradient(var(--darkblue), var(--white));
     padding: 50px 0;
     box-sizing: border-box;
 }
 
 .recent-block .header {
-    font-family: "Roboto Condensed", sans-serif;
     font-size: 48px;
     font-weight: 400;
     line-height: 56.25px;
-    color: #ffffff;
+    color: var(--white);
     text-align: center;
 }
 
 .recent-block .divider {
     width: 100px;
     height: 10px;
-    background-color: #ffffff;
+    background-color: var(--white);
     margin: auto;
 }
 
@@ -427,9 +457,14 @@ header .box {
     background-color: var(--promenade);
     opacity: 0.9;
     z-index: -1;
-    text-align: center;
-    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     box-sizing: border-box;
+}
+
+.portfolio .picture .onhover img {
+    display: block;
 }
 
 .portfolio .picture:hover .onhover {
@@ -442,7 +477,6 @@ header .box {
 
 .portfolio .text {
     margin-top: 35px;
-    font-family: "Roboto Condensed", sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 18.75px;
@@ -467,7 +501,6 @@ header .box {
 }
 
 .video-block .box .right h1 {
-    font-family: "Roboto Condensed", sans-serif;
     font-size: 48px;
     font-weight: 400;
     line-height: 56.25px;
@@ -501,7 +534,7 @@ header .box {
     border: none;
     border-radius: 3px;
     font-family: "Roboto", sans-serif;
-    color: #ffffff;
+    color: var(--white);
     font-size: 18px;
     font-weight: 500;
     text-transform: uppercase;
@@ -524,7 +557,6 @@ header .box {
 
 .latest-news .header {
     color: var(--darkgray);
-    font-family: "Roboto Condensed", sans-serif;
     font-size: 48px;
     font-weight: 400;
     line-height: 56.25px;
@@ -573,7 +605,6 @@ header .box {
     padding: 10px;
     box-sizing: border-box;
     background-color: var(--darkblue);
-    font-family: "Roboto Condensed", sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 18.75px;
@@ -585,11 +616,10 @@ header .box {
 .card .undertext {
     width: 100%;
     height: 40px;
-    background-color: #ffffff;
+    background-color: var(--white);
     margin-bottom: 30px;
     padding: 10px;
     box-sizing: border-box;
-    font-family: "Roboto Condensed", sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 18.75px;
@@ -603,6 +633,7 @@ header .box {
     border: 8px solid var(--darkblue);
     box-sizing: border-box;
     border-radius: 10px;
+    margin-bottom: 30px;
 }
 
 .card:hover .item .overtext {
@@ -614,7 +645,7 @@ header .box {
 }
 
 .card:hover .undertext {
-    visibility: hidden;
+    display: none;
 }
 
 .contents-two {
@@ -644,7 +675,6 @@ header .box {
 .testimonial .box .text {
     width: 58%;
     margin: auto;
-    font-family: "Roboto Condensed", sans-serif;
     color: var(--darkgray);
     font-size: 36px;
     font-weight: 400;
@@ -660,7 +690,6 @@ header .box {
 .author {
     margin-top: 30px;
     margin-bottom: 100px;
-    font-family: "Roboto Condensed", sans-serif;
     color: var(--darkgray);
     font-size: 24px;
     font-weight: 700;
@@ -679,17 +708,13 @@ header .box {
     width: 10px;
     height: 10px;
     border-radius: 50px;
+    border: 1px solid var(--darkblue);
     background-color: var(--darkblue);
     margin: 5px;
 }
 
 .testimonial .box .owl-dots button.owl-dot.active {
-    width: 10px;
-    height: 10px;
-    border-radius: 50px;
-    border: 1px solid var(--darkblue);
     background-color: transparent;
-    margin: 5px;
 }
 
 /* footer */
@@ -708,7 +733,7 @@ footer .info {
 
 footer .info .text {
     font-family: "Roboto", sans-serif;
-    color: #ffffff;
+    color: var(--white);
     font-size: 24px;
     font-weight: 400;
     line-height: 32px;
@@ -747,12 +772,11 @@ footer .info .text {
 }
 
 .col h2 {
-    font-family: "Roboto Condensed", sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 18.75px;
     letter-spacing: 2px;
-    color: #ffffff;
+    color: var(--white);
 }
 
 .col p,
@@ -761,7 +785,7 @@ footer .info .text {
     font-size: 12px;
     font-weight: 400;
     line-height: 20px;
-    color: #ffffff;
+    color: var(--white);
     margin: 0;
     margin-bottom: 5px;
     text-decoration: none;
@@ -779,7 +803,6 @@ footer .info .text {
 
 .to-top .top {
     background-color: var(--promenade);
-    font-family: "Roboto Condensed", sans-serif;
     color: var(--darkgray);
     font-size: 16px;
     font-weight: 400;
@@ -826,11 +849,8 @@ footer .logo {
     }
 
     .intro .owl-dots button.owl-dot {
-        background-color: var(--darkblue);
-    }
-
-    .intro .owl-dots button.owl-dot.active {
         border: 1px solid var(--darkblue);
+        background-color: var(--darkblue);
     }
 
     /* promo */
@@ -883,11 +903,12 @@ footer .logo {
     }
 
     .projects {
-        padding: 0 80px;
+        justify-content: center;
+        padding: 0 130px;
     }
 
     .portfolio {
-        width: 50%;
+        width: 350px;
     }
 
     .portfolio .picture {
@@ -984,6 +1005,16 @@ footer .logo {
     }
 }
 
+@media only screen and (max-width: 1321px) {
+
+    /* recent-block */
+
+    .projects {
+        padding: 0 70px;
+    }
+
+}
+
 @media only screen and (max-width: 1023px) {
 
     /* intro */
@@ -1055,11 +1086,35 @@ footer .logo {
         grid-template-rows: 25% 25% 25% 25%;
     }
 
+    .service.three,
+    .service.seven {
+        border-left: 1px solid rgba(255, 215, 0, 0.3);
+    }
+
+    .service.three,
+    .service.four {
+        border-top: none;
+    }
+
     /* recent-block */
 
     .projects {
         padding: 0;
     }
+
+    .portfolio {
+        width: 340px;
+    }
+
+    /* .portfolio .picture {
+        width: 300px;
+        height: 283px;
+    }
+
+    .portfolio .picture .onhover {
+        width: 293px;
+        height: 260px;
+    } */
 
     /* video-block */
 
@@ -1103,7 +1158,7 @@ footer .logo {
         border: none;
         border-radius: 3px;
         font-family: "Roboto", sans-serif;
-        color: #ffffff;
+        color: var(--white);
         font-size: 18px;
         font-weight: 500;
         text-transform: uppercase;
@@ -1458,6 +1513,18 @@ footer .logo {
     .services .right {
         display: block;
     }
+
+    .service.two,
+    .service.four,
+    .service.six,
+    .service.eight {
+        border-left: 1px solid rgba(255, 215, 0, 0.3);
+    }
+
+    .service.two {
+        border-top: none;
+    }
+
 
     /* recent-block */
 
